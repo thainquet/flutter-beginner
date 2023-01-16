@@ -10,7 +10,7 @@ GoRouter router() {
       GoRoute(
         name: 'home',
         path: '/',
-        builder: (context, state) => const HomePage(),
+        builder: (context, state) => HomePage(),
         pageBuilder: (_, state) {
           return CustomTransitionPage(
             child: HomePage(),
