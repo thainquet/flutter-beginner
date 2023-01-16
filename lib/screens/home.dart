@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/components/camera.dart';
 import 'package:go_router/go_router.dart';
-import 'dart:async';
 import 'dart:io';
 import 'dart:developer';
-import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
