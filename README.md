@@ -1,10 +1,10 @@
 TO-DO list:
-- [ ] setting up environment
-- [ ] create new repo and run locally
-- [ ] widget, stateful widget, stateless widget
+- [x] setting up environment
+- [x] create new repo and run locally
+- [x] widget, stateful widget, stateless widget
 - [ ] basic widget: Row, Container, Column, ...
 - [ ] callback function
-- [ ] routing (with Go Router)
+- [x] routing (with Go Router)
 - [ ] state management
 - [ ] handle rest API call, work with JSON data
 - [ ] 3rd party library: camera, image picker,...
