@@ -1,16 +1,21 @@
-# flutter_application_1
+TO-DO list:
+- [x] setting up environment
+- [x] create new repo and run locally
+- [x] widget, stateful widget, stateless widget
+- [ ] basic widget: Row, Container, Column, ...
+- [ ] callback function
+- [x] routing (with Go Router)
+- [ ] state management
+- [ ] handle rest API call, work with JSON data
+- [ ] 3rd party library: camera, image picker,...
 
-A new Flutter project.
+## Updates
+13/01:
+- setting up environment
+- create new repo and run locally
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+16/01:
+- widget, stateful widget, stateless widget
+- routing (with Go Router)
+- state management (local state only)
+- integrate with camera package, qr code scanner
