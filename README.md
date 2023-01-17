@@ -19,3 +19,6 @@ TO-DO list:
 - routing (with Go Router)
 - state management (local state only)
 - integrate with camera package, qr code scanner
+
+17/01:
+- handle rest API call, work with JSON data
