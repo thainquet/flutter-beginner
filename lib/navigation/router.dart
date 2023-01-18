@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_application_1/screens/home.dart';
+import 'package:flutter_application_1/screens/home/home.dart';
 import 'package:flutter_application_1/screens/setting.dart';
 import 'package:go_router/go_router.dart';
 
