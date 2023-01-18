@@ -47,10 +47,11 @@ class HomePageState extends State<HomePage> {
         child: Scaffold(
             body: Stack(
               children: [
+                Offstage(offstage: _selectedTabIndex != 0, child: TickerMode(enabled: _selectedTabIndex == 0, child: TextField())),
                 Offstage(
-                  offstage: _selectedTabIndex != 0,
+                  offstage: _selectedTabIndex != 1,
                   child: TickerMode(
-                    enabled: _selectedTabIndex == 0,
+                    enabled: _selectedTabIndex == 1,
                     child: Column(
                       children: <Widget>[
                         Expanded(flex: 4, child: _buildQrView(context)),
@@ -132,7 +133,6 @@ class HomePageState extends State<HomePage> {
                     ),
                   ),
                 ),
-                Offstage(offstage: _selectedTabIndex != 1, child: TickerMode(enabled: _selectedTabIndex == 1, child: TextField())),
                 Offstage(
                     offstage: _selectedTabIndex != 2,
                     child: TickerMode(
