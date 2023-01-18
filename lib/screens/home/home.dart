@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/screens/home/camera_tab.dart';
-import 'package:flutter_application_1/screens/home/home_tab.dart';
+import 'package:flutter_application_1/screens/home/home_tab/home_tab.dart';
 import 'package:flutter_application_1/screens/home/setting_tab.dart';
 
 class HomePage extends StatefulWidget {
