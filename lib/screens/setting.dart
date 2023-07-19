@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:flutter_application_1/models/post.dart';
 import 'package:flutter_application_1/services/posts/get_post.dart';
 
