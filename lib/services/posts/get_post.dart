@@ -1,12 +1,12 @@
-import 'package:http/http.dart' as http;
 import 'package:flutter_application_1/models/post.dart';
-import 'dart:convert';
+import 'package:dio/dio.dart';
+
+final dio = Dio();
 
 Future<Post> getPost() async {
-  final response = await http.get(Uri.parse("https://jsonplaceholder.typicode.com/posts/1"));
-
+  final response = await dio.get('https://jsonplaceholder.typicode.com/posts/1');
   if (response.statusCode == 200) {
-    return Post.fromJson(json.decode(response.body));
+    return Post.fromJson(response.data);
   } else {
     throw Exception('Failed to load post');
   }

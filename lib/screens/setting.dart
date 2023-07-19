@@ -25,11 +25,30 @@ class SettingScreenState extends State<SettingScreen> {
         future: post,
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return Text(snapshot.data?.title ?? '');
+            return Align(
+                alignment: Alignment.topLeft,
+                child: SafeArea(
+                    child: Column(
+                  children: [
+                    Text(snapshot.data?.title ?? ""),
+                    Text(snapshot.data?.description ?? "asdssd"),
+                  ],
+                )));
           } else if (snapshot.hasError) {
-            return Text('${snapshot.error}');
+            return Align(
+              alignment: Alignment.topLeft,
+              child: SafeArea(child: Text('${snapshot.error}')),
+            );
           }
-          return CircularProgressIndicator();
+          return SimpleDialog(
+            elevation: 0.0,
+            backgroundColor: Colors.transparent,
+            children: const [
+              Center(
+                child: CircularProgressIndicator(),
+              )
+            ],
+          );
         },
       ),
     );
